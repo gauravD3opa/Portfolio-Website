@@ -1,0 +1,172 @@
+{
+  "availability": {
+    "label": "Actively Seeking New Opportunities",
+    "available": true
+  },
+  "hero": {
+    "headline": "Hello, I'm",
+    "name": "Gaurav Deopa",
+    "introLine": "Software Engineer with",
+    "experienceText": "4+ years",
+    "experienceSuffix": "of experience in building reliable software.",
+    "description": "I enjoy working on performance optimization, distributed systems, cloud engineering, AI-powered solutions and modernizing legacy applications.",
+    "image": "src\\images\\gauravDeopaPhoto.png"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "Comprehensive expertise across modern development stack with focus on scalable web applications and DevOps practices.",
+    "categories": [
+      {
+        "title": "Backend & Programming",
+        "skills": [
+          "C#",
+          "ASP.NET Core Web API",
+          "WCF",
+          "Windows Services",
+          "REST API Design",
+          "Microservices",
+          "JWT Authentication",
+          "Role-Based Access Control (RBAC)"
+        ]
+      },
+      {
+        "title": "Databases",
+        "skills": [
+          "SQL Server",
+          "Advanced T-SQL",
+          "Indexing",
+          "Performance Tuning",
+          "Oracle PL/SQL",
+          "Packages",
+          "Procedures",
+          "Functions",
+          "Query Optimization",
+          "SSRS"
+        ]
+      },
+      {
+        "title": "Cloud & DevOps",
+        "skills": [
+          "Microsoft Azure",
+          "AZ-204",
+          "AI-200",
+          "Azure DevOps",
+          "CI/CD Pipelines",
+          "Build & Release Management",
+          "Application Deployment",
+          "Monitoring",
+          "Docker"
+        ]
+      },
+      {
+        "title": "Frontend",
+        "skills": ["WPF", "React.js", "JavaScript", "HTML/CSS"]
+      },
+      {
+        "title": "AI & Integration",
+        "skills": [
+          "Retrieval-Augmented Generation (RAG)",
+          "MCP",
+          "Azure AI Language",
+          "NLP",
+          "Third-Party API Integrations",
+          "System Integrations"
+        ]
+      },
+      {
+        "title": "Domain & Other",
+        "skills": [
+          "Content Scheduling",
+          "Contract & Licensing Management",
+          "Media Metadata Workflows",
+          "OTT",
+          "Linear TV Operations",
+          "Python",
+          "Agile/Scrum",
+          "Root-Cause Analysis",
+          "Production Support",
+          "System Stability",
+          "Unit Testing",
+          "xUnit",
+          "NUnit",
+          "Git",
+          "Swagger/Open API"
+        ]
+      }
+    ]
+  }
+  ,
+  "experience": {
+    "title": "Professional Experience",
+    "subtitle": "Over 5 years of experience building scalable web applications and leading development teams in fast-paced environments."
+  },
+  "links": {
+    "resume": "https://drive.google.com/uc?export=download&id=11qbhdzp_OYEWkaXiT7BpDLs4uFe2bVvk",
+    "github": "https://github.com/gauravD3opa",
+    "linkedin": "https://www.linkedin.com/in/gaurav-deopa-8461291a9/",
+    "email": "mailto:gauravdeopa4@gmail.com"
+  },
+  "contact": {
+    "title": "Open to Work",
+    "subtitle": "I'm looking for my next opportunity to build impactful software, solve challenging problems, and contribute to a strong engineering team.",
+    "email": "gauravdeopa4@gmail.com",
+    "phone": "+91 7983540549",
+    "location": "Pune, Maharashtra"
+  },
+  "experiences": [
+    {
+      "title": "Senior Software Engineer",
+      "company": "Tech Solutions Inc.",
+      "location": "Remote",
+      "period": "2022 - Present",
+      "description": "Lead full-stack development projects using React, Node.js, and TypeScript. Implemented CI/CD pipelines with Jenkins and managed containerized applications with Docker and Kubernetes.",
+      "technologies": ["React", "Node.js", "TypeScript", "Docker", "Kubernetes", "Jenkins"]
+    },
+    {
+      "title": "Full Stack Developer",
+      "company": "Digital Innovations Ltd.",
+      "location": "New York, NY",
+      "period": "2020 - 2022",
+      "description": "Developed and maintained web applications using modern JavaScript frameworks. Collaborated with DevOps team to implement automated deployment processes and infrastructure as code with Terraform.",
+      "technologies": ["JavaScript", "Express.js", "Firebase", "Terraform", "Git"]
+    },
+    {
+      "title": "Software Developer",
+      "company": "StartupCorp",
+      "location": "San Francisco, CA",
+      "period": "2019 - 2020",
+      "description": "Built responsive web applications and RESTful APIs. Worked with cross-functional teams using Agile methodologies to deliver high-quality software solutions.",
+      "technologies": ["PHP", "JavaScript", "SQL", "Jest", "Agile"]
+    }
+  ],
+  "projectsSection": {
+    "title": "Featured Projects",
+    "subtitle": "A selection of projects that demonstrate my expertise in full-stack development and modern DevOps practices."
+  },
+  "projects": [
+    {
+      "title": "E-Commerce Platform",
+      "description": "Full-stack e-commerce solution built with Next.js and Node.js. Features include user authentication, payment processing, and admin dashboard.",
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
+      "technologies": ["Next.js", "Node.js", "TypeScript", "PostgreSQL", "Docker"],
+      "github": "#",
+      "demo": "#"
+    },
+    {
+      "title": "DevOps Automation Suite",
+      "description": "Comprehensive CI/CD pipeline automation using Jenkins, Docker, and Kubernetes. Reduced deployment time by 70% and improved system reliability.",
+      "image": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&h=400&fit=crop",
+      "technologies": ["Jenkins", "Docker", "Kubernetes", "Terraform", "AWS"],
+      "github": "#",
+      "demo": "#"
+    },
+    {
+      "title": "Real-time Analytics Dashboard",
+      "description": "Interactive dashboard for real-time data visualization using React and Firebase. Handles thousands of concurrent users with live updates.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+      "technologies": ["React", "Firebase", "Chart.js", "WebSocket", "TypeScript"],
+      "github": "#",
+      "demo": "#"
+    }
+  ]
+}
