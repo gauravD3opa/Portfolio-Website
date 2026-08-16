@@ -72,15 +72,41 @@ export function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-2 pt-2">
-                  <Button variant="outline" size="sm" className="gap-2">
-                    <Github className="h-4 w-4" />
-                    Code
+                {project.github && (
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="gap-2"
+                    asChild
+                  >
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Github className="h-4 w-4" />
+                      Code
+                    </a>
                   </Button>
-                  <Button size="sm" className="gap-2">
-                    <ExternalLink className="h-4 w-4" />
-                    Demo
+                )}
+
+                {project.demo && (
+                  <Button
+                    size="sm"
+                    className="gap-2"
+                    asChild
+                  >
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <ExternalLink className="h-4 w-4" />
+                      Demo
+                    </a>
                   </Button>
-                </div>
+                )}
+              </div>
               </CardContent>
             </Card>
           ))}

@@ -1,0 +1,32 @@
+{
+
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug React + Vercel",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["vercel", "dev"],
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "name": "Debug React in Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Debug Full Stack",
+      "configurations": [
+        "Debug React + Vercel",
+        "Debug React in Chrome"
+      ]
+    }
+  ]
+
+}

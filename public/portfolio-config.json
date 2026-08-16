@@ -10,7 +10,7 @@
     "experienceText": "4+ years",
     "experienceSuffix": "of experience in building reliable software.",
     "description": "I enjoy working on performance optimization, distributed systems, cloud engineering, AI-powered solutions and modernizing legacy applications.",
-    "image": "src\\images\\gauravDeopaPhoto.png"
+    "image": "..\\src\\images\\gauravDeopaPhoto.png"
   },
   "skills": {
     "title": "Technical Skills",
@@ -158,7 +158,7 @@
       "image": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&h=400&fit=crop",
       "technologies": ["Jenkins", "Docker", "Kubernetes", "Terraform", "AWS"],
       "github": "#",
-      "demo": "#"
+      "demo": "https://www.google.com/"
     },
     {
       "title": "Real-time Analytics Dashboard",

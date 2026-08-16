@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { createHash, randomUUID } from "crypto";
 import { FieldValue } from "firebase-admin/firestore";
-import { db } from "./lib/firebase-admin";
+import { db } from "./lib/firebase-admin.js";
 
 
 const MAX_NAME_LENGTH = 100;
