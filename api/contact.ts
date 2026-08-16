@@ -1,10 +1,8 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { createHash, randomUUID } from "crypto";
 import { FieldValue } from "firebase-admin/firestore";
-import { Resend } from "resend";
 import { db } from "./lib/firebase-admin";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 const MAX_NAME_LENGTH = 100;
 const MAX_EMAIL_LENGTH = 254;
@@ -152,62 +150,6 @@ export default async function handler(
     const safeSubject = escapeHtml(subject);
     const safeMessage = escapeHtml(message);
 
-    try {
-      const emailResult = await resend.emails.send(
-        {
-          from: `Portfolio <${process.env.RESEND_FROM_EMAIL}>`,
-          to: [process.env.CONTACT_EMAIL!],
-          replyTo: email,
-          subject: `Portfolio Contact: ${subject}`,
-          html: `
-            <h2>New Portfolio Contact</h2>
-
-            <p>
-              <strong>Name:</strong>
-              ${safeName}
-            </p>
-
-            <p>
-              <strong>Email:</strong>
-              ${safeEmail}
-            </p>
-
-            <p>
-              <strong>Subject:</strong>
-              ${safeSubject}
-            </p>
-
-            <hr />
-
-            <p style="white-space: pre-wrap;">
-              ${safeMessage}
-            </p>
-
-            <hr />
-
-            <p>
-              Message ID: ${messageId}
-            </p>
-          `,
-        },
-        {
-          idempotencyKey: `portfolio-contact-${messageId}`,
-        }
-      );
-
-      if (emailResult.error) {
-        console.error("Resend error:", emailResult.error);
-      } else {
-        await messageRef.update({
-          emailSent: true,
-          resendEmailId: emailResult.data?.id ?? null,
-        });
-      }
-    } catch (emailError) {
-      // The message is already safely stored in Firestore.
-      // Don't expose internal email-service errors to the visitor.
-      console.error("Email notification failed:", emailError);
-    }
 
     return res.status(200).json({
       success: true,

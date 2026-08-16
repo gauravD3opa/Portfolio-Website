@@ -153,7 +153,8 @@ export function Contact() {
         body: JSON.stringify(form),
       });
 
-      const result = await response.json();
+      const text = await response.text();
+      const result = text ? JSON.parse(text) : {};
 
       if (!response.ok) {
         throw new Error(
