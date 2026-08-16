@@ -10,7 +10,7 @@
     "experienceText": "4+ years",
     "experienceSuffix": "of experience in building reliable software.",
     "description": "I enjoy working on performance optimization, distributed systems, cloud engineering, AI-powered solutions and modernizing legacy applications.",
-    "image": "..\\src\\images\\gauravDeopaPhoto.png"
+    "image": "/images/gauravDeopaPhoto.png"
   },
   "skills": {
     "title": "Technical Skills",
