@@ -145,41 +145,31 @@
       "title": "Content Scheduling & Media Management Platform",
       "description": "Enterprise platform managing content licensing, scheduling, and metadata for OTT and linear TV operations across multiple regions. Built .NET Core Web API services for scheduling workflows, metadata updates, and cross-system integrations, with real-time data exchange APIs to downstream OTT systems. Implemented licensing- and territory-driven scheduling logic and optimized Oracle PL/SQL packages for financial calculations, cutting critical process execution time by up to 40%.",
       "image": "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=600&h=400&fit=crop",
-      "technologies": ["WPF", "WCF", ".NET Core Web API", "Oracle PL/SQL", "SQL Server", "IIS"],
-      "github": "#",
-      "demo": "#"
+      "technologies": ["WPF", "WCF", ".NET Core Web API", "Oracle PL/SQL", "SQL Server", "IIS"]
     },
     {
       "title": "Advertisement Scheduling & Campaign Management System",
       "description": "Core-level ad and promo scheduling system for broadcast channels, handling channel overlays, ad/campaign scheduling, and time-slot allocation. Designed integration APIs for external ad delivery and tracking systems and built database-driven workflows for schedule releases, cutting manual intervention and reducing processing time by 50%.",
       "image": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=400&fit=crop",
-      "technologies": ["WPF", "WCF", "SQL Server", "Windows Services", "T-SQL"],
-      "github": "#",
-      "demo": "#"
+      "technologies": ["WPF", "WCF", "SQL Server", "Windows Services", "T-SQL"]
     },
     {
       "title": "Frontend Modernization POC — WPF to React",
       "description": "Led a proof-of-concept migrating a legacy WPF/WCF metadata capture interface to a modern React front end on an ASP.NET Core Web API backend. Used React's component architecture and async data fetching to eliminate full-screen reloads, improving usability and cutting long-term maintenance overhead.",
       "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&h=400&fit=crop",
-      "technologies": ["React.js", "JavaScript", "ASP.NET Core Web API", "REST API"],
-      "github": "#",
-      "demo": "#"
+      "technologies": ["React.js", "JavaScript", "ASP.NET Core Web API", "REST API"]
     },
     {
       "title": "Invoice Ingestion & Statistics Dashboard (Snowflake Hackathon)",
       "description": "Built an invoice ingestion and analytics dashboard that automates data extraction and visualization from uploaded invoice documents using Snowflake Snowpark, Streamlit, and Azure Blob Storage.",
       "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
-      "technologies": ["Snowflake Snowpark", "Streamlit", "Azure Blob Storage", "Python"],
-      "github": "#",
-      "demo": "#"
+      "technologies": ["Snowflake Snowpark", "Streamlit", "Azure Blob Storage", "Python"]
     },
     {
       "title": "AI Agentic Claims Verification System (HackerRank Orchestrate Hackathon)",
       "description": "Designed and built an AI agentic system to verify damage claims by cross-referencing uploaded images, a short conversational claim intake, user history, and minimum evidence requirements.",
       "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
-      "technologies": ["AI Agents", "RAG", "Python", "NLP"],
-      "github": "#",
-      "demo": "#"
+      "technologies": ["AI Agents", "RAG", "Python", "NLP"]
     }
   ]
 }
