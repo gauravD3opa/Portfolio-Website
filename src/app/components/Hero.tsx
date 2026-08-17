@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
-import { Github, Linkedin, Mail, Download, ArrowDown, Sparkles } from "lucide-react";
+import { Github, Linkedin, Mail, Download, ArrowDown, Sparkles, Code2, Terminal } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { fetchConfig } from "../../lib/config";
 
@@ -20,7 +20,14 @@ const defaultHero = {
 export function Hero() {
   const [availability, setAvailability] = useState(defaultAvailability);
   const [heroContent, setHeroContent] = useState(defaultHero as any);
-  const [links, setLinks] = useState({ resume: "", github: "", linkedin: "", email: "" });
+  const [links, setLinks] = useState({ 
+    resume: "", 
+    github: "", 
+    linkedin: "", 
+    email: "", 
+    leetcode: "", 
+    hackerrank: "" 
+  });
 
   useEffect(() => {
     let isMounted = true;
@@ -37,6 +44,8 @@ export function Hero() {
           github: cfg?.links?.github ?? "",
           linkedin: cfg?.links?.linkedin ?? "",
           email: cfg?.links?.email ?? "",
+          leetcode: cfg?.links?.leetcode ?? "",
+          hackerrank: cfg?.links?.hackerrank ?? "",
         });
       } catch (e) {
         if (isMounted) {
@@ -55,12 +64,10 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/5">
-        {/* Floating geometric shapes */}
         <div className="absolute top-20 left-10 w-32 h-32 bg-primary/5 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute top-40 right-20 w-48 h-48 bg-secondary/30 rounded-full blur-3xl animate-pulse delay-700"></div>
         <div className="absolute bottom-40 left-20 w-40 h-40 bg-accent/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
         
-        {/* Grid pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="grid grid-cols-12 gap-4 h-full">
             {Array.from({ length: 12 }, (_, i) => (
@@ -74,21 +81,7 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Side - Content */}
           <div className="space-y-8 text-center lg:text-left order-2 lg:order-1">
-            {/* Status Badge */}
-            {/* <div className="flex justify-center lg:justify-start">
-              <Badge 
-                variant="secondary" 
-                className={`px-6 py-3 border backdrop-blur-sm ${
-                  availability.available
-                    ? "bg-primary/10 text-primary border-primary/20"
-                    : "bg-muted text-muted-foreground border-muted-foreground/20"
-                }`}
-              >
-                <Sparkles className="h-4 w-4 mr-2" />
-                {availability.label}
-              </Badge>
-            </div> */}
-
+            
             {/* Main Heading */}
             <div className="space-y-6">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl tracking-tight">
@@ -138,8 +131,8 @@ export function Hero() {
               </Button>
             </div>
 
-            {/* Social Links */}
-            <div className="flex gap-4 justify-center lg:justify-start">
+            {/* Social & Coding Links */}
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
               {links.github ? (
                 <Button
                   variant="ghost"
@@ -161,6 +154,30 @@ export function Hero() {
                   aria-label="Visit LinkedIn profile"
                 >
                   <Linkedin className="h-5 w-5" />
+                </Button>
+              ) : null}
+
+              {links.leetcode ? (
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="h-12 w-12 rounded-full bg-background/50 backdrop-blur-sm border border-primary/10 hover:bg-primary/10 hover:border-primary/30 transition-all duration-300"
+                  onClick={() => window.open(links.leetcode, "_blank", "noopener,noreferrer")}
+                  aria-label="Visit LeetCode profile"
+                >
+                  <Code2 className="h-5 w-5" />
+                </Button>
+              ) : null}
+
+              {links.hackerrank ? (
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="h-12 w-12 rounded-full bg-background/50 backdrop-blur-sm border border-primary/10 hover:bg-primary/10 hover:border-primary/30 transition-all duration-300"
+                  onClick={() => window.open(links.hackerrank, "_blank", "noopener,noreferrer")}
+                  aria-label="Visit HackerRank profile"
+                >
+                  <Terminal className="h-5 w-5" />
                 </Button>
               ) : null}
 
@@ -197,11 +214,9 @@ export function Hero() {
           {/* Right Side - Image */}
           <div className="flex justify-center order-1 lg:order-2">
             <div className="relative">
-              {/* Decorative Elements */}
               <div className="absolute -top-4 -left-4 w-72 h-72 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-3xl opacity-60"></div>
               <div className="absolute -bottom-4 -right-4 w-64 h-64 bg-gradient-to-tl from-accent/30 to-primary/10 rounded-full blur-3xl opacity-40"></div>
               
-              {/* Main Image Container */}
               <div className="relative z-10 group">
                 <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10 backdrop-blur-sm border-4 border-background/50 shadow-2xl">
                   <ImageWithFallback
@@ -209,12 +224,9 @@ export function Hero() {
                     alt={heroContent.name || "Profile"}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  
-                  {/* Overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent"></div>
                 </div>
                 
-                {/* Floating Badge */}
                 <div className="absolute -bottom-6 -right-6 bg-background/90 backdrop-blur-sm border border-primary/20 rounded-2xl px-6 py-4 shadow-xl">
                   <div className="flex items-center gap-3">
                     <div
