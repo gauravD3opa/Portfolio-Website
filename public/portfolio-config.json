@@ -140,7 +140,7 @@
   },
   "projects": [
     {
-      "title": "Content Scheduling & Media Management Platform (Synergy — MultiChoice)",
+      "title": "Content Scheduling & Media Management Platform",
       "description": "Enterprise platform managing content licensing, scheduling, and metadata for OTT and linear TV operations across multiple regions. Built .NET Core Web API services for scheduling workflows, metadata updates, and cross-system integrations, with real-time data exchange APIs to downstream OTT systems. Implemented licensing- and territory-driven scheduling logic and optimized Oracle PL/SQL packages for financial calculations, cutting critical process execution time by up to 40%.",
       "image": "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=600&h=400&fit=crop",
       "technologies": ["WPF", "WCF", ".NET Core Web API", "Oracle PL/SQL", "SQL Server", "IIS"],
