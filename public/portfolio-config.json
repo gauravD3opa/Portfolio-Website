@@ -1,7 +1,7 @@
 {
   "availability": {
-    "label": "Actively Seeking New Opportunities",
-    "available": true
+    "label": "Currently not looking for new Opportunities",
+    "available": false
   },
   "hero": {
     "headline": "Hello, I'm",
