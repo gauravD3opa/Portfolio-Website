@@ -204,10 +204,6 @@ export function Hero() {
                 <div className="text-2xl md:text-3xl mb-1">4+</div>
                 <div className="text-sm text-muted-foreground">Years of Experience</div>
               </div>
-              <div className="text-center lg:text-left">
-                <div className="text-2xl md:text-3xl mb-1">100%</div>
-                <div className="text-sm text-muted-foreground">Client Satisfaction</div>
-              </div>
             </div>
           </div>
 
